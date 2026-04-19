@@ -1,0 +1,23 @@
+name: OfficePlugin
+version: '1.0.0'
+main: ru.office.plugin.OfficePlugin
+api-version: '1.21'
+description: Trade system with GUI — Office Trade Plugin
+authors: [YourName]
+depend: [Vault]
+softdepend: [Essentials]
+
+commands:
+  office:
+    description: Главная команда системы трейдов Office
+    usage: /office <ник> | accept | cancel | help
+    aliases: [trade, tr]
+    permission: office.use
+
+permissions:
+  office.use:
+    description: Позволяет использовать трейд-систему
+    default: true
+  office.admin:
+    description: Административные команды
+    default: op
